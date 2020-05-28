@@ -6,8 +6,12 @@
             <h1 style="padding-right: 0px;padding-left: 0px;margin-bottom: 30px;">Stephi Place Estate</h1>
             <p style="color: rgb(0,139,210);font-size: 25px;padding-left: 303px;margin-bottom: 5%;">Connexion</p>
             <div>
+            <form method="POST" action="{{ route('login') }}">
+            @csrf
                 <div class="row" style="margin-bottom: 10px;">
-                    <div class="col md-2"><input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}" required autocomplete="email" autofocus style="font-size: 20px;"></div>
+                    <div class="col md-2">
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}" required autocomplete="email" autofocus style="font-size: 20px;">
+                    </div>
                     @error('email')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -15,7 +19,9 @@
                     @enderror
                 </div>
                 <div class="row" style="margin-bottom: 10px;">
-                    <div class="col md-2"><input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Mot de passe" style="font-size: 20px;"></div>
+                    <div class="col md-2">
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Mot de passe" style="font-size: 20px;">
+                    </div>
                     @error('password')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -47,6 +53,7 @@
                                 @endif
                             </div>
                         </div>
+            </form>
             </div>
         </div>
     </div>

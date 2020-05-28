@@ -123,7 +123,7 @@
                 </div>
             </div>
         </nav>
-        <div class="container fixed-bottom" style="width: 770px;background-color: #ffffff;border-radius:5%5%0%0%;">
+        <div class="container fixed-bottom" style="width: 770px;background-color: #ffffff;border-radius:10px;">
             <h1 style="padding-right: 0px;padding-left: 0px;margin-bottom: 30px;margin-top: 6px;">Stephi Place Estate</h1>
             <p>Stephi Place Real Estate est un réseau d'agences immobilières britannique.</p>
             <div class="input-group">

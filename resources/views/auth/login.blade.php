@@ -2,7 +2,7 @@
 
 @section('content')
 <div style="background-color: #000000;">
-        <div class="container fixed-bottom" style="width: 770px;background-color: #ffffff;border-radius:2%2%0%0%;">
+        <div class="container fixed-bottom" style="width: 770px;background-color: #ffffff;border-radius:10px;">
             <h1 style="padding-right: 0px;padding-left: 0px;margin-bottom: 30px;">Stephi Place Estate</h1>
             <p style="color: rgb(0,139,210);font-size: 25px;padding-left: 303px;margin-bottom: 5%;">Connexion</p>
             <div>
@@ -10,7 +10,7 @@
             @csrf
                 <div class="row" style="margin-bottom: 10px;">
                     <div class="col md-2">
-                        <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}" required autocomplete="email" autofocus style="font-size: 20px;">
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" id="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus style="font-size: 20px;">
                     </div>
                     @error('email')
                         <span class="invalid-feedback" role="alert">

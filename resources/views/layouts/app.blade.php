@@ -20,7 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 </head>
-<body style="background-image: url('https://nsa40.casimages.com/img/2020/05/28/200528105052418715.jpg');background-repeat: no-repeat;background-size: cover;background-color: rgba(0,0,0, 0.4);">
+<body style="background-image: url('https://nsa40.casimages.com/img/2020/05/28/200528105052418715.jpg');background-repeat: no-repeat;background-size: cover; background-attachment: fixed;background-color: rgba(0,0,0, 0.4);">
     <div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">    
             <div class="container">
@@ -58,7 +58,12 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Mon compte') }}
+                                    </a>
+                                    <a class="dropdown-item" style="color: red;" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Déconnexion') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

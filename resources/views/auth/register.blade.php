@@ -2,7 +2,7 @@
 
 @section('content')
 <div style="background-color: #000000;">
-        <div class="container fixed-bottom" style="width: 770px;background-color: #ffffff;border-radius:1%1%0%0%;">
+        <div class="container fixed-bottom" style="width: 770px;background-color: #ffffff;border-radius:10px;">
             <h1 style="padding-right: 0px;padding-left: 0px;margin-bottom: 30px;">Stephi Place Estate</h1>
             <p style="color: rgb(0,139,210);font-size: 25px;padding-left: 303px;margin-bottom: 5%;">Inscription</p>
             <div>
